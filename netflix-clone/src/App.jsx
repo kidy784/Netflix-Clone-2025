@@ -1,9 +1,11 @@
 import React from 'react'
 import './App.css'
+import HOME from './pages/Home/Home.JSX'
 
 function App() {
   return (
-    <>App</>
+    <div className='App'>
+    <HOME/></div>
   )
 }
 
