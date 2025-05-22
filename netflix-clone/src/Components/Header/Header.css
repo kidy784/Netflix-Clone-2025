@@ -1,42 +1,60 @@
-.header_outer_container{
-    position: sticky;
+/* Outer container for full width and fixed position */
+.header_outer_container {
+    width: 100%;
+    position: fixed;
     top: 0;
-    display: flex;
-    justify-content: center;
-    /*background-color:rgb(148,132,132);*/
-    background-color: rgb(20,20,20);
-    background-color: transparent;
-    height: 10vh;
-    color:white;
-    transition: all 0.5s;
-    transition-timing-function:ease-in ;
-    z-index:1;
-    /* bacKground-color:red; */
-}
-.nav_black {
-    background-color: rgb(20,20,20);
-}
-.header_container{
-    width:90%;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background- color :yellow;*/}
-
-.header_left ul {
-    width: 140%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    padding: 10px 0;
+  }
+  
+  /* Inner container for layout */
+  .header_container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
+  }
+  
+  /* Left side of the header */
+  .header_left ul,
+  .header_right ul {
     list-style: none;
-    cursor: pointer;
-    /* background-color:lightblue; */
-}  
-.header_right ul{
-    width:150%;
     display: flex;
-    justify-content: space-around;
-    list-style: none;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Navigation links */
+  .header_left li {
     cursor: pointer;
-    /* background-color: lightgreen; */
-}
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .header_left li:hover {
+    color: #e50914; /* Netflix red */
+  }
+  
+  /* First li in header_left is the logo */
+  .header_left li:first-child {
+    margin-right: 30px;
+  }
+  
+  /* Right side icons */
+  .header_right li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .header_right li:hover {
+    color: #e50914;
+  }
+  
+ 
+  
